@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+
+html body {
+    width: 100%;
+    margin: 0;
+    background-image: url(./img/espaco.jpg);
+    background-size: auto;
+}
+
+.img-logo img {
+    width: 20rem;
+    height: auto;
+}
+
+.container-header {
+    background-color: transparent;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    height: 2rem;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-header button {
+    background: rgb(0, 0, 0);
+    box-shadow: 2px 5px 2px #3b065ca9;
+    cursor: pointer;
+    width: 15rem;
+    height: 2.5rem;
+    border: none;
+    transition: all .3s ease-in-out;
+    margin-top: 3rem;
+}
+
+button:hover {
+    background: #3b065ca9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 0 #3b065ca9;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.seletores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10rem;
+}
+
+.btn {
+    width: 13rem;
+    height: 2.3rem;
+    justify-content: space-around;
+    background-color: #3b065c;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.container-pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesquisar {
+    width: 15rem;
+    height: 1rem;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #000000;
+    padding: 1.0rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    background-color: #3b065cc5;
+    color: white;
+}
+
+.pesquisar.active {
+    border: none;
+}
+
+#calculation {
+    display: none;
+    width: 28rem;
+    height: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    font-family: 'Patua One';
+    font-size: 20px;
+    text-align: center;
+    background-color: #3b065c;
+    border: 5px solid #00000090;
+    border-radius: 9px;
+    color: rgb(255, 255, 255); 
+    flex-flow: row nowrap;
+}
+
+#read {
+    padding: 0em 6em;
+    text-align: center;
+}
+
+.card {
+    background-image: url(./img/espacowe.jpg);
+    display: inline-block;
+    padding: 35px;
+    width: 300px;
+    height: 350px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Patua One';
+    font-weight: bold;
+    box-shadow: 8px 8px 8px black;
+    color: #fff;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.card:hover .card-in {
+    transform: rotateY(180deg);
+}
+
+.card-in {
+    display: flex;
+
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.list-card {
+    list-style: none;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.card-first,
+.back-card {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.card-first {
+    text-align: center;
+}
+
+.back-card {
+    display: flex;
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+/*Responsividade - Menu*/
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    .btn-header {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        width: 2rem;
+        float: right;
+        margin-right: 2rem;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        display: block;
+        padding-top: 1.2rem;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        float: right;
+        transition: all .3s ease-in-out;
+        background-color: #3b065c8c;
+        width: 200px;
+        height: auto;
+    }
+
+    .mobile-menu .nav-link:hover {
+        background-color: #3b065c;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 0 #3b065c;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+}
+
+@media screen and (max-width: 847px) {
+
+
+    .seletores {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+    }
+
+    .btn {
+        margin-top: 1rem;
+    }
+
+}

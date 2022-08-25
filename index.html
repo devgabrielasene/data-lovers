@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Set Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container-header">
+    <figure aria-sort="ascending" class="img-logo"><img src="img/titulose.png" alt="Logo"></figure>
+    <button class="btn-header"><a href="index.html" class="nav-link">C-137</a></button>
+    <button class="btn-header"><a href="about.html" target="_blank" class="nav-link">More</a></button>
+    <button class="btn-header"><a href="multiverso.html" target="_blank"
+        class="nav-link">Multiverso</a></button>
+  </header>
+
+  <!-- responsividade -->
+
+  <div class="mobile-menu-icon">
+    <button onclick="menuShow()"><img class="icon" src="img/menu.png" alt="Menu"></button>
+  </div>
+
+  <div class="mobile-menu">
+    <ul>
+      <li class="btn-header-mobile"><a href="index.html" class="nav-link">C-137</a></li>
+      <li class="btn-header-mobile"><a href="about.html" class="nav-link">More</a></li>
+      <li class="btn-header-mobile"><a href="multiverso.html" class="nav-link">Multiverso</a></li>
+    </ul>
+  </div>
+
+  <aside class="seletores">
+
+    <select  id="select-gender" class="select-gender btn">
+      <option value="gender" selected disabled>Gênero</option>
+      <option class="select-gender" value="Male">Macho</option>
+      <option class="select-gender" value="Female">Fêmea</option>
+      <option class="select-gender" value="unknown">Indefinido</option>
+    </select>
+    <select class="select-specie btn">
+      <option value="specie" selected disabled>Espécie</option>
+      <option class="select-specie" value="Human"> Humano</option>
+      <option class="select-specie" value="Humanoid"> Humanóide</option>
+      <option class="select-specie" value="Alien"> Alien</option>
+      <option class="select-specie" value="Animal"> Animal</option>
+    </select>
+    <select class="select-status btn">
+      <option value="status" selected disabled>Status</option>
+      <option class="status" value="Alive"> Vivo</option>
+      <option class="status" value="Dead"> Morto</option>
+      <option class="status" value="unknown"> Indefinido</option>
+    </select>
+    <select class="btn" id="orderAz">
+      <option selected disabled value="">Ordenar</option>
+      <option value="A-Z">A-Z</option>
+      <option value="Z-A">Z-A</option>
+    </select>
+  </aside>
+
+  <span class="container-pesquisa">
+    <input id="search-container" class="pesquisar" type="text" placeholder="Pesquise por... ">
+    <div id="calculation"></div>
+  </span>
+  
+  <main class="scroll">
+    <div id="read"></div>
+  </main>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+  <script src="menu.js"></script>
+</body>
+
+</html>
