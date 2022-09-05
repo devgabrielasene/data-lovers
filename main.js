@@ -1,13 +1,11 @@
 import { dataFilter, nameFilter, computeStats, orderAz } from './data.js';
-// import data from './data/lol/lol.js';
 import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/rickandmorty/rickandmorty.js';
 import menuShow from './menu.js';
 
 function cardsData(data) {
   document.getElementById('read').innerHTML = data.map((item) => `
 
-    <section class="card">
+    <ul class="card">
       <div class="card-in"> 
         <div class="card-first">
         <img class="card-img" src="${item.image}">
@@ -24,7 +22,7 @@ function cardsData(data) {
         </ul>
       </div>
     </div>
-  </section>  
+  </ul>  
   `)
     .join('')
 }

@@ -5,7 +5,9 @@ html body {
     width: 100%;
     margin: 0;
     background-image: url(./img/espaco.jpg);
-    background-size: auto;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
 }
 
 .img-logo img {
@@ -152,7 +154,7 @@ html body {
     margin: auto;
     width: 100%;
     height: 100%;
-    transition: transform 1s;
+    transition: transform 600ms ease-in-out;
     transform-style: preserve-3d;
 }
 
