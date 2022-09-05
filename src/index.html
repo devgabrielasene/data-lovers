@@ -14,29 +14,32 @@
 
 <body>
   <header class="container-header">
-    <figure aria-sort="ascending" class="img-logo"><img src="img/titulose.png" alt="Logo"></figure>
-    <ul>
+    <figure aria-sort="ascending" class="img-logo">
+      <a href="index.html" class="nav-link">
+      <img src="img/titulose.png" alt="Logo">
+    </a>
+    </figure>
+    <nav>
       <li class="btn-header"><a href="index.html" class="nav-link">C-137</a></li>
       <li class="btn-header"><a href="about.html" class="nav-link">More</a></li>
       <li class="btn-header"><a href="multiverso.html" class="nav-link">Multiverso</a></li>
-    </ul>
+    </nav>
   </header>
 
-  <!-- responsividade -->
 
   <div class="mobile-menu-icon">
     <button class="btnmenu"><img class="icon" src="img/menu.png" alt="Menu"></button>
   </div>
 
-  <div class="mobile-menu">
+  <nav class="mobile-menu">
     <ul>
       <li class="btn-header-mobile"><a href="index.html" class="nav-link">C-137</a></li>
       <li class="btn-header-mobile"><a href="about.html" class="nav-link">More</a></li>
       <li class="btn-header-mobile"><a href="multiverso.html" class="nav-link">Multiverso</a></li>
     </ul>
-  </div>
+  </nav>
 
-  <aside class="seletores">
+  <form class="seletores">
 
     <select class="select-gender btn">
       <option value="gender" selected disabled>Gênero</option>
@@ -62,7 +65,7 @@
       <option value="A-Z">A-Z</option>
       <option value="Z-A">Z-A</option>
     </select>
-  </aside>
+  </form>
 
   <span class="container-pesquisa">
     <input id="search-container" class="pesquisar" type="text" placeholder="Pesquise por... ">
