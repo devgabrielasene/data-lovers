@@ -1,7 +1,7 @@
 html body {
     width: 100%;
     margin: 0;
-    background-image: url(./img/espaco.jpg);
+    background-image: url(../img/espaco.jpg);
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -142,7 +142,7 @@ html body {
     width: 250px;
     height: 350px;
     border-radius: 20px;
-    background-image: url(./img/gabs.jpeg);
+    background-image: url(../img/gabs.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
@@ -190,7 +190,7 @@ html body {
     width: 250px;
     height: 350px;
     border-radius: 20px;
-    background-image: url(./img/brunaa.jpg);
+    background-image: url(../img/brunaa.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
@@ -238,7 +238,7 @@ html body {
     width: 250px;
     height: 350px;
     border-radius: 20px;
-    background-image: url(./img/poly.png);
+    background-image: url(../img/poly.png);
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
