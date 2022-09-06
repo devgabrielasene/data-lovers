@@ -1,6 +1,6 @@
-import { dataFilter, nameFilter, computeStats, orderAz } from './data.js';
-import data from './data/rickandmorty/rickandmorty.js';
-import menuShow from './menu.js';
+import { dataFilter, nameFilter, computeStats, orderAz } from '../scripts/data.js';
+import data from '../data/rickandmorty/rickandmorty.js';
+import menuShow from '../scripts/menu.js';
 
 function cardsData(data) {
   document.getElementById('read').innerHTML = data.map((item) => `
